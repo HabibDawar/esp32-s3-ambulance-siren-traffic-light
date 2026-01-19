@@ -41,44 +41,44 @@ Embedded Development:
 - TensorFlow Lite for Microcontrollers
 - Arduino I2S library
 
-##Project Structure
+Project Structure
 -----------------
 
 ESP32S3_Traffic_Light_Controller/
 │
-├── notebooks/
-│   └── Ambulance Siren and Traffic Noise Audio Classification.ipynb
+├── notebooks/ # Jupyter notebooks
+│ └── Ambulance Siren and Traffic Noise Audio Classification.ipynb
 │
-├── data/
-│   ├── Extracted_features.pkl
-│   └── test_audio/
+├── data/ # Dataset and features
+│ ├── Extracted_features.pkl # Pre-processed features
+│ └── test_audio/ # Audio samples
 │
-├── performance_logs/
+├── performance_logs/ # Performance logs
 │
-├── src/
-│   ├── ESP32S3_Traffic_Light_Controller.ino
-│   └── include/
-│       └── model_ambulance_siren.h
+├── src/ # ESP32 source code
+│ ├── ESP32S3_Traffic_Light_Controller.ino
+│ └── include/ # Header files
+│ └── model_ambulance_siren.h # TFLite model as C array
 │
-├── models/
-│   ├── my_model.h5
-│   └── model_ambulance_siren.tflite
+├── models/ # Machine learning models
+│ ├── my_model.h5 # Original Keras model
+│ └── model_ambulance_siren.tflite # Converted TFLite model
 │
-├── model_conversion_scripts/
+├── model_conversion_scripts/ # Conversion utilities
 │
-├── scripts/
-│   ├── model_validation.py
-│   ├── feature_extraction.py
-│   └── data_analysis.py
+├── scripts/ # Python utilities
+│ ├── model_validation.py
+│ ├── feature_extraction.py
+│ └── data_analysis.py
 │
-├── docs/
-│   ├── wiring_diagram.png
-│   └── troubleshooting.md
+├── docs/ # Documentation
+│ ├── wiring_diagram.png
+│ └── troubleshooting.md
 │
-├── platformio.ini
-├── partitions.csv
-├── config.py
-└── README.md  <-- Ganti dari .txt ke .md
+├── platformio.ini # PlatformIO configuration
+├── partitions.csv # ESP32-S3 memory partitioning
+├── config.py # Path configuration
+└── README.md # Project documentation (this file)
 Installation & Setup
 --------------------
 Step 1: Clone and Setup Directory Structure
