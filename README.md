@@ -43,7 +43,6 @@ Embedded Development:
 
 Project Structure
 -----------------
-
 ESP32S3_Traffic_Light_Controller/
 │
 ├── notebooks/ # Jupyter notebooks
@@ -79,6 +78,7 @@ ESP32S3_Traffic_Light_Controller/
 ├── partitions.csv # ESP32-S3 memory partitioning
 ├── config.py # Path configuration
 └── README.md # Project documentation (this file)
+
 Installation & Setup
 --------------------
 Step 1: Clone and Setup Directory Structure
