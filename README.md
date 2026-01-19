@@ -45,39 +45,39 @@ Project Structure
 -----------------
 ESP32S3_Traffic_Light_Controller/
 │
-├── notebooks/ # Jupyter notebooks
+├── notebooks/  Jupyter notebooks
 │ └── Ambulance Siren and Traffic Noise Audio Classification.ipynb
 │
-├── data/ # Dataset and features
-│ ├── Extracted_features.pkl # Pre-processed features
-│ └── test_audio/ # Audio samples
+├── data/  Dataset and features
+│ ├── Extracted_features.pkl  Pre-processed features
+│ └── test_audio/  Audio samples
 │
-├── performance_logs/ # Performance logs
+├── performance_logs/  Performance logs
 │
-├── src/ # ESP32 source code
+├── src/  ESP32 source code
 │ ├── ESP32S3_Traffic_Light_Controller.ino
-│ └── include/ # Header files
-│ └── model_ambulance_siren.h # TFLite model as C array
+│ └── include/  Header files
+│ └── model_ambulance_siren.h  TFLite model as C array
 │
-├── models/ # Machine learning models
-│ ├── my_model.h5 # Original Keras model
-│ └── model_ambulance_siren.tflite # Converted TFLite model
+├── models/  Machine learning models
+│ ├── my_model.h5  Original Keras model
+│ └── model_ambulance_siren.tflite  Converted TFLite model
 │
-├── model_conversion_scripts/ # Conversion utilities
+├── model_conversion_scripts/  Conversion utilities
 │
-├── scripts/ # Python utilities
+├── scripts/ Python utilities
 │ ├── model_validation.py
 │ ├── feature_extraction.py
 │ └── data_analysis.py
 │
-├── docs/ # Documentation
+├── docs/  Documentation
 │ ├── wiring_diagram.png
 │ └── troubleshooting.md
 │
 ├── platformio.ini # PlatformIO configuration
 ├── partitions.csv # ESP32-S3 memory partitioning
-├── config.py # Path configuration
-└── README.md # Project documentation (this file)
+├── config.py  Path configuration
+└── README.md  Project documentation (this file)
 
 Installation & Setup
 --------------------
