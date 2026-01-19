@@ -70,7 +70,7 @@ ESP32S3_Traffic_Light_Controller/
 ├── partitions.csv
 ├── config.py
 └── README.md
-~~~
+```
 
 Installation & Setup
 --------------------
