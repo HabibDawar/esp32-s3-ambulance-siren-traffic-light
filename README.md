@@ -41,43 +41,44 @@ Embedded Development:
 - TensorFlow Lite for Microcontrollers
 - Arduino I2S library
 
-Project Structure
+##Project Structure
 -----------------
+
 ESP32S3_Traffic_Light_Controller/
 │
-├── notebooks/                          # Jupyter notebooks
+├── notebooks/
 │   └── Ambulance Siren and Traffic Noise Audio Classification.ipynb
 │
-├── data/                               # Dataset and features
-│   ├── Extracted_features.pkl          # Pre-processed features
-│   ├── test_audio/                     # Audio samples
-│   └── performance_logs/               # Performance logs
+├── data/
+│   ├── Extracted_features.pkl
+│   └── test_audio/
 │
-├── src/                                # ESP32 source code
-│   └── ESP32S3_Traffic_Light_Controller.ino
+├── performance_logs/
 │
-├── include/                            # Header files
-│   └── model_ambulance_siren.h         # TFLite model as C array
+├── src/
+│   ├── ESP32S3_Traffic_Light_Controller.ino
+│   └── include/
+│       └── model_ambulance_siren.h
 │
-├── models/                             # Machine learning models
-│   ├── my_model.h5                     # Original Keras model
-│   ├── model_ambulance_siren.tflite    # Converted TFLite model
-│   └── model_conversion_scripts/       # Conversion utilities
+├── models/
+│   ├── my_model.h5
+│   └── model_ambulance_siren.tflite
 │
-├── scripts/                            # Python utilities
+├── model_conversion_scripts/
+│
+├── scripts/
 │   ├── model_validation.py
 │   ├── feature_extraction.py
 │   └── data_analysis.py
 │
-├── docs/                               # Documentation
+├── docs/
 │   ├── wiring_diagram.png
 │   └── troubleshooting.md
 │
-├── platformio.ini                      # PlatformIO configuration
-├── partitions.csv                      # ESP32-S3 memory partitioning
-├── config.py                           # Path configuration
-└── README.txt                          # This file
-
+├── platformio.ini
+├── partitions.csv
+├── config.py
+└── README.md  <-- Ganti dari .txt ke .md
 Installation & Setup
 --------------------
 Step 1: Clone and Setup Directory Structure
